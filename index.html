@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCU</title>
+    <style >
+        .frame1{
+            width: 1800px;
+            height: 100px;
+            flex-shrink: 0;
+            background: #0B1E28;
+            
+        }
+
+        .rectangle2{
+            width: 24px;
+            height: 4px;
+            flex-shrink: 0;
+            background: #1989FA;
+            position: absolute;
+            left: 312px;
+            top: 80px;
+            
+        }
+
+        .frame4{
+            display: inline-flex;
+            width: 143px;
+            height: 50px;
+            padding: 20px 36px 20px 37px;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            border-radius: 10px;
+            background: #1989FA;
+            position: absolute;
+            left: 1450px;
+            top: 11px;
+            
+        }
+
+        .wold1{
+            color: #ffffff;
+            width: 70px;
+            height: 19px;
+            font-family: "Inter";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            position: absolute;
+            left: 37px;
+            top: 36px;
+            
+        }
+        .frame3{
+            display: inline-flex;
+            width: 563px;
+            height: 59px;
+            padding: 15px 19px 16px 18px;
+            justify-content: center;
+            align-items: center;
+            gap: 396px;
+            border-radius: 10px;
+            background: #FFF;
+            position: absolute;
+            left: 843px;
+            top: 11px;
+            
+        }
+        .word2{
+            color: #a09797;
+            width: 48px;
+            height: 19px;
+            font-family: "Inter";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            position: absolute;
+            left: 18px;
+            top: 20px;
+            
+        }
+        .group1{
+            width: 82px;
+            height: 28px;
+            position: absolute;
+            left: 462px;
+            top: 19px;
+            
+        }
+        .word3{
+            color: #1989fa;
+            width: 32px;
+            height: 19px;
+            font-family: "Inter";
+            font-size: 16px;
+            font-style: normal; 
+            font-weight: 400;
+            line-height: normal;
+            position: absolute;
+            left: 50px;
+            top: 5px;
+            
+        }
+        .Line1{
+            width: 1px;
+            height: 28px;
+            background: #000;
+            position: absolute;
+            left: 0px;
+            top: 20px;
+
+        }
+        .vector{
+            width: 20.85px;
+            height: 20.85px;
+            flex-shrink: 0;
+            fill: var(--character-primary-85, #000000d9);
+            stroke-width: 1px;
+            stroke: #1989FA;
+            position: absolute;
+            left: 481px;
+            top: 61.15px;
+        }
+        .img2{
+            width: 66px;
+            height: 59px;
+            flex-shrink: 0;
+            border-radius: 1px;
+            background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+            position: absolute;
+            left: 208px;
+            top: 25px;
+           
+        }
+        .img1{
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+            position: absolute;
+            left: 18px;
+            top: 20px;
+            
+        }
+        .frame2{
+            display: inline-flex;
+            align-items: flex-start;
+            gap: 16px; 
+            width: 176px;
+            height: 19px;
+            position: absolute;
+            left: 308px;
+            top: 31px;
+            
+        }
+        .Vector{
+            position: absolute;
+            left: 481px;
+            top: 61.15px;
+            width: 20.85px;
+            height: 20.85px;
+            flex-shrink: 0;
+            fill: var(--character-primary-85, #000000d9); 
+            stroke-width: 1px;
+            stroke: #1989FA;
+        }
+        .group5{
+            width: 1383px;
+            height: 397px;
+            flex-shrink: 0;
+            position: absolute;
+            left: 208.5px;
+            top: 116px;
+        }
+        .symbol1,.symbol2{
+            display: flex;
+            width: 33px;
+            height: 33px;
+            flex-direction: column;
+            justify-content: center;
+            flex-shrink: 0;
+            color: #c7bbbb;
+            font-family: "Inter";
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .symbol1{
+            position: absolute;
+            left: 0%;
+            top: 182px; 
+        }
+        .symbol2{
+            position: absolute;
+            left:1350px ;
+            top: 182px;
+        }
+        .img3{
+            width: 1383px;
+            height: 397px;
+            flex-shrink: 0;
+            border-radius: 12px;
+            background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+        }
+        .Ellipse1,.Ellipse2,.Ellipse3{
+            width: 10px;
+            height: 10px;
+            flex-shrink: 0;  
+
+        }
+        .Ellipse1{
+            fill: #1989FA;
+            position: absolute;
+            left: 641px;
+            top: 377px;
+        }
+        .Ellipse2{
+            fill: #D9D9D9;
+            position: absolute;
+            left: 669px;
+            top: 377px;
+
+        }
+        .Ellipse3{
+            fill: #D9D9D9;
+            position: absolute;
+            left: 698px;
+            top: 377px;
+
+        } 
+        .frame36{
+            width: 1383px;
+            height: 1412px;
+            flex-shrink: 0;
+            border-radius: 11px;
+            background: #FFF;
+            position: absolute;
+            left: 208px;
+            top: 1995px;
+        }
+        
+        .img4{
+            width: 1798px;
+            height: 495px;
+            flex-shrink: 0; 
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        } 
+        .word4{
+            color: #ffffff;
+            font-family: "Inter";
+            font-size: 45px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            position: absolute;
+            left: 601px;
+            top: 76px;
+        }
+        .box{
+            display: flex;
+            width: 1111px;
+            height: 181px;
+            justify-content: center;
+            align-items: center;
+            gap: 66px;
+            position: absolute;
+            left: 136px;
+            top: 169px;
+        }
+        .frame37,.frame38,.frame39,.frame40{
+            display: flex;
+            padding: 29px 33px 8px 33px;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            gap: 17px;
+            width: 166px;
+            height: 181px;
+        }
+        .frame37{
+            position: absolute;
+            left: 124.5px;
+            top: 0%;
+        }
+        .frame38{
+            position: absolute;
+            left:356.5px;
+            top: 0px;
+        }
+        .frame39{
+            position: absolute;
+            left: 588.5px;
+            top:0px ;
+        }
+        .frame40{
+            position: absolute;
+            left: 820.5px;
+            top: 0px;
+        }
+        .img5,.img6,.img7,.img8{
+            width: 97px;
+            height: 97px;
+            background: url(<path-to-image>), lightgray 50% / cover no-repeat;    
+            position: absolute;
+            left: 34px;
+            top: 29px;
+        }
+        .word5,.word6,.word7,.word8{
+            color: #ffffff;
+            font-family: "Inter";
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            position: absolute;
+            left: 33px;
+            top: 143px;
+        }
+        .frame9{
+            display: inline-flex;
+            height: 227px;
+            width: 1000px;
+            padding: 0 628px 0 203px;
+            align-items: flex-end;
+            gap: 37px;
+            flex-shrink: 0;
+            background: #0B1E28;
+            position: absolute;
+            top: 2509px;
+            left: 0px;
+        }
+        .img9{
+            width: 66px;
+            height: 59px;
+            border-radius: 1px;
+            background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+            position: absolute;
+            left: 203px;
+            top: 100px;
+        }
+        .group2{
+            width: 866px;
+            height: 61px;
+            position: absolute;
+            left: 306px;
+            top: 82px;
+        }
+        .word9{
+            color: #1989fa;
+            font-family: "Inter";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+           
+        }
+        .word10{
+            color: #ffffff;
+            font-family: "Inter";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            position: absolute;
+            top: 0px;
+            left: 99px;
+        }
+        .word11{
+            color: #ffffff;
+            font-family: "Inter";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            position: absolute;
+            top: 42px;
+        }
+        .frame8{
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+            position: absolute;
+            left: 1761;
+            top: 2436;
+        }
+        .frame6{
+            width: 1383px;
+            height: 479px;
+            flex-shrink: 0;
+            background: #FFF;
+            position: absolute;
+            left: 208.5px;
+            top: 548px;
+        }
+        .frame7,.frame8,.frame99,.frame100,.frame111{
+            width: 1360px;
+            height: 177px;
+            flex-shrink: 0;
+        }
+        .symbol3,.symbol4,.symbol5,.symbol6,.symbol7{
+            color: #000000;
+            font-family: "Inter";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            opacity: 0.5;
+        }
+        .frame7{
+            position: absolute;
+            left: 23px;
+            top: 84px;
+
+        }
+        .frame8{
+            position: absolute;
+            left: 23px;
+            top: 321px;
+        }
+        .frame99{
+            position: absolute;
+            left: 23px;
+            top: 558px;
+        }
+        .frame100{
+            position: absolute;
+            left: 23px;
+            top: 795px;
+        }
+        .frame111{
+            position: absolute;
+            left: 23px;
+            top: 1032px;
+        }
+        .word15,.word13,.word14,.word17,.word18,.word19,.word21,
+        .word22,.word23,.word25,.word26,.word27,.word29,.word30,.word31{
+            width: 39px;
+            color: #000000;
+            font-family: "Inter";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            opacity: 0.5;
+        }
+        .symbol3,.symbol4,.symbol5,.symbol6,.symbol7{
+            position: absolute;
+            left: 369px;
+            top: 137px;
+        }
+        .word12,.word16,.word20,.word24,.word28{
+            position: absolute;
+            left: 305px;
+            top: 140px;
+        }
+        .word13,.word17,.word21,.word25,.word29,.word30{
+            position: absolute;
+            left: 217px;
+            top: 139px;
+        }
+        .word14,.word18,.word22,.word26,.word30{
+            position: absolute;
+            left: 124px;
+            top: 139px;
+        }
+        .word15,.word19,.word23,.word27,.word31{
+            position: absolute;
+            left: 35px;
+            top: 139px;
+        }        
+        .img10,.img15,.img20,.img25,.img30{
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+            fill: var(--character-primary-85, #000000d9);
+            position: absolute;
+            left: 275px;
+            top: 141px;
+            
+        }
+        
+        .img11,.img16,.img21,.img26,.img31{
+            width: 25px;
+            height: 24px;
+            flex-shrink: 0;
+            opacity: 0.5;
+            position: absolute;
+            left: 186px;
+            top: 139px;
+            
+        }
+        
+        .img12,.img17,.img22,.img27,.img32{
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+            opacity: 0.5;
+            position: absolute;
+            top:141px ;
+            left: 94px;
+        }
+        
+        .img13,.img18,.img23,.img28,.img33{
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+            position: absolute;
+            left: 0px;
+            top: 139px; 
+        }
+        
+        .img14,.img19,.img24,.img29,.img34{
+            width: 53px;
+            height: 53px;
+            flex-shrink: 0;
+            border-radius: 81px;
+            background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+            position: absolute;
+            left: 0px;
+            top: 15px;
+        }
+        .moment1,.moment6,.moment11,.moment16,.moment21{
+            color: #000000;
+            font-family: "Inter";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            position: absolute;
+            left: 0px;
+            top: 80px; 
+        }
+        .moment2,.moment7,.moment12,.moment17,.moment22{
+            color: #1989fa;
+            font-family: "Inter";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            position: absolute;
+            left: 210px;
+            top: 101px;
+        }
+        .moment3,.moment8,.moment13,.moment18,.moment23{
+            color: #000000;
+            font-family: "Inter";
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal; 
+            position: absolute;
+            left: 0px;
+            top: 42px;
+        }
+        .moment4,.moment9,.moment14,.moment19,.moment24{
+            color: #000000;
+            font-family: "Inter";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            position: absolute;
+            left:77px;
+            top:5px;
+        }
+        .moment5,.moment10,.moment15,.moment20,.moment25{
+            color: #000000;
+            font-family: "Inter";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            position: absolute;
+            left:77px ;
+            top: 40px;
+        }
+        .Rectangle1{
+            width: 30px;
+            height: 5px;
+            flex-shrink: 0;
+            background: #1989FA;
+            position: absolute;
+            left: 145px;
+            top: 60px;
+        }
+        .frame22{
+            display: flex;
+            width: 448px;
+            height: 30px;
+            align-items: center;
+            gap: 35px;
+            position: absolute;
+            left:138px;
+            top: 30px;
+        }
+        .zuixin{
+            display: flex;
+            width: 101px;
+            height: 39px;
+            flex-direction: column;
+            justify-content: center;
+            flex-shrink: 0;
+            color: #000000;
+            font-family: "Inter";
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            position: absolute;
+            left: 23px;
+            top: 5px;
+        }
+        .line2{
+            width: 1384px;
+            height: 0.99px;
+            flex-shrink: 0;
+            stroke-width: 1px;
+            stroke: #EBE9E9;
+            position: absolute;
+            left: 3px;
+            top: 59px;
+        }
+        .frame35{
+            display: inline-flex;
+            padding: 4px 8px 4px 7px;
+            justify-content: center;
+            align-items: center;
+            background: #EDEDED;
+            position: absolute;
+            left: 840px;
+            top: 1352px;
+        }
+        .group3{
+            width: 465.97px;
+            height: 32px;
+            flex-shrink: 0;
+            position: absolute;
+            left: 500px;
+            top: 1347px
+        }
+        .frame33,.frame34{
+            display: flex;
+            width: 32.97px;
+            height: 32px;
+            padding: 6px 6.35px 6px 6px;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            background: #EDEDED;
+        }
+        .frame33{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+        .frame34{
+            position: absolute;
+            left: 433px;
+            top: 0px;
+        }
+        .frame15,.frame16,.frame17,.frame18,.frame19,.frame20,.frame26{
+            display: flex;
+            width: 32px;
+            height: 32px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+            background: #EDEDED;
+        }
+        .frame15{
+            position: absolute;
+            left: 49px;
+            top: 5px;
+        }
+        .frame16{
+            position: absolute;
+            left: 97px;
+            top: 5px;
+        }
+        .frame17{
+            position: absolute;
+            left:145px;
+            top:5px;
+        }
+        .frame18{
+            position: absolute;
+            left: 193px;
+            top: 5px;
+        }
+        .frame19{
+            position: absolute;
+            left: 241px;
+            top:5px;
+        }
+        .frame20{
+            position: absolute;
+            left: 289px;
+            top:5px;
+        }
+        .frame26{
+            position: absolute;
+            left: 385px;
+            top: 5px;
+        }
+        .p1{
+            color: #1989fa;
+            font-family: "Inter";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .p2,.p3,.p4{
+            color: #ffffff;
+            font-family: "Inter";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .p2{
+            position: absolute;
+            left: 48px;
+        }
+        .p3{
+            position: absolute;
+            left: 96px;
+        }
+        .p4{
+            position: absolute;
+            left: 144px;
+        }
+        .p5{
+            color: #1989fa;
+            font-family: "Inter";
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .p6{
+            position: absolute;
+            left: 85px;
+            display: flex;
+            width: 54px;
+            height: 19px;
+            flex-direction: column;
+            justify-content: center;
+            flex-shrink: 0;
+           color: #000000;
+           font-family: "Inter";
+           font-size: 25px;
+           font-style: normal;
+           font-weight: 400;
+           line-height: normal; 
+        }
+        .p7{
+            position: absolute;
+            left: 174px;
+            color: #000000;
+            font-family: "Inter";
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .p8{
+            position: absolute;
+            left: 259px;
+            width: 51px;
+            flex-shrink: 0;
+            color: #000000;
+            font-family: "Inter";
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .p9{
+            position: absolute;
+            left: 345px;
+            width: 102px;
+            flex-shrink: 0;
+            color: #000000;
+            font-family: "Inter";
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    </style>
+    
+</head>
+<body >
+    
+   <div class="web">
+        <div class="frame1">
+            <div class="rectangle2" ></div>
+            <div class="frame4"><p class="word1">登录/注册</p></div>
+            <img src="../储存图片/R-C 1.png" class="img2">
+            <div class="frame2">
+                <p class="p1">首页</p>
+                <p class="p2">学习</p>
+                <p class="p3">组队</p>
+                <p class="p4">报销</p>
+            </div>   
+            <div class="frame3">
+                <div class="group1">
+                   <div class="Line1">|</div>
+                   <p class="word3">搜索</p>    
+                   <div class="img1"><img  src="../储存图片/icon-search.png" ></div>
+            </div> 
+                
+                <div class="Vector"></div>
+                <p class="word2">蓝桥杯</p> 
+        </div>
+        <div class="group5">
+            <div class="symbol1"><</div>
+            <div class="symbol2">></div>
+            <div class="img3"><img src="../储存图片/7-201106093100E5 1.png" ></div>
+            <div class="Ellipse1">。</div>
+            <div class="Ellipse2">。</div>
+            <div class="Ellipse3">。</div>
+        </div>
+        <div class="frame36">
+            <div class="img4"><img src="../储存图片/bg1 1.png" ></div>
+            <div class="word4"><p>南大软院</p></div>
+            <div class="box">
+                <div class="frame37"><img src="../储存图片/bg1-1 1.png" class="img5"><p class="word5">绿色校园</p></div>
+                <div class="frame38"><img src="../储存图片/bg1-1 1(1).png" class="img6"><p class="word6">学术交流</p></div>
+                <div class="frame39"><img src="../储存图片/bg1-1 1(2).png" class="img7"><p class="word7">人才培养</p></div>
+                <div class="frame40"><img src="../储存图片/bg1-1 1(3).png" class="img8"><p class="word8">质量保障</p></div>
+                
+            </div>
+            
+        </div>
+        <div class="frame9">
+            <div><img src="../储存图片/R-C 1.png" class="img9"></div>
+            <div class="group2">
+                <p class="word9">创作团队 </p>
+                <p class="word10">意见反馈</p>
+                <p class="word11">Copyright (c) 2014-2022 Nanchang University. All Rights Reserved. 赣ICP备20001624号-1/网备36010802000198号</p>
+            </div>
+        </div>
+        <div class="frame6">
+            <div class="frame7">
+                <div class="symbol3" >...</div>
+                <div class="word12">转发</div>
+                <div class="word13">99+</div>
+                <div class="word14">99+</div>
+                <div class="word15">99+</div>
+                <div class=""></div>
+                <img src="../储存图片/icon-share.png" class="img10">
+                <img src="../储存图片/icon-star.png" class="img11">
+                <img src="../储存图片/icon-comments.png" class="img12">
+                <img src="../储存图片/icon-thumbs-up.png" class="img13">
+                <p class="moment1">现已开启2023年度蓝桥杯报销活动，请在本站”报销”站点进行报销。<br>截止时间为2023年6月30日 <p class="moment2">...查看更多</p> </p>
+                <p class="moment3">蓝桥杯报销活动已开启</p>
+                <p class="moment4">dalasiweijie</p>
+                <p class="moment5">今天17:56  软件工程2107班</p>
+                <img src="../储存图片/abe1eea3ca79fc28-c577ebdcb0f3dbcc-9016680db63a5b3f.png" class="img14">
+            </div>
+            <div class="frame8">
+                <div class="symbol4">...</div>
+                <div class="word16">转发</div>
+                <div class="word17">99+</div>
+                <div class="word18">99+</div>
+                <div class="word19">99+</div>
+                <div class=""></div>
+                <img src="../储存图片/icon-share.png" class="img15">
+                <img src="../储存图片/icon-star.png" class="img16">
+                <img src="../储存图片/icon-comments.png" class="img17">
+                <img src="../储存图片/icon-thumbs-up.png" class="img18">
+                <p class="moment6">现已开启2023年度蓝桥杯报销活动，请在本站”报销”站点进行报销。<br>截止时间为2023年6月30日 <p class="moment7">...查看更多</p> </p>
+                <p class="moment8">蓝桥杯报销活动已开启</p>
+                <p class="moment9">dalasiweijie</p>
+                <p class="moment10">今天17:56  软件工程2107班</p>
+                <img src="../储存图片/abe1eea3ca79fc28-c577ebdcb0f3dbcc-9016680db63a5b3f.png" class="img19">
+            </div>
+            <div class="frame99">
+                <div class="symbol5">...</div>
+                <div class="word20">转发</div>
+                <div class="word21">99+</div>
+                <div class="word22">99+</div>
+                <div class="word23">99+</div>
+                <div class=""></div>
+                <img src="../储存图片/icon-share.png" class="img20">
+                <img src="../储存图片/icon-star.png" class="img21">
+                <img src="../储存图片/icon-comments.png" class="img22">
+                <img src="../储存图片/icon-thumbs-up.png" class="img23">
+                <p class="moment11">现已开启2023年度蓝桥杯报销活动，请在本站”报销”站点进行报销。<br>截止时间为2023年6月30日 <p class="moment12">...查看更多</p> </p>
+                <p class="moment13">蓝桥杯报销活动已开启</p>
+                <p class="moment14">dalasiweijie</p>
+                <p class="moment15">今天17:56  软件工程2107班</p>
+                <img src="../储存图片/abe1eea3ca79fc28-c577ebdcb0f3dbcc-9016680db63a5b3f.png" class="img24">
+            </div>
+            <div class="frame100">
+                <div class="symbol6">...</div>
+                <div class="word24">转发</div>
+                <div class="word25">99+</div>
+                <div class="word26">99+</div>
+                <div class="word27">99+</div>
+                <div class=""></div>
+                <img src="../储存图片/icon-share.png" class="img25">
+                <img src="../储存图片/icon-star.png" class="img26">
+                <img src="../储存图片/icon-comments.png" class="img27">
+                <img src="../储存图片/icon-thumbs-up.png" class="img28">
+                <p class="moment16">现已开启2023年度蓝桥杯报销活动，请在本站”报销”站点进行报销。<br>截止时间为2023年6月30日 <p class="moment17">...查看更多</p> </p>
+                <p class="moment18">蓝桥杯报销活动已开启</p>
+                <p class="moment19">dalasiweijie</p>
+                <p class="moment20">今天17:56  软件工程2107班</p>
+                <img src="../储存图片/abe1eea3ca79fc28-c577ebdcb0f3dbcc-9016680db63a5b3f.png" class="img29">
+            </div>
+            <div class="frame111">
+                <div class="symbol7">...</div>
+                <div class="word28">转发</div>
+                <div class="word29">99+</div>
+                <div class="word30">99+</div>
+                <div class="word31">99+</div>
+                <div class=""></div>
+                <img src="../储存图片/icon-share.png" class="img30">
+                <img src="../储存图片/icon-star.png" class="img31">
+                <img src="../储存图片/icon-comments.png" class="img32">
+                <img src="../储存图片/icon-thumbs-up.png" class="img33">
+                <p class="moment21">现已开启2023年度蓝桥杯报销活动，请在本站”报销”站点进行报销。<br>截止时间为2023年6月30日 <p class="moment22">...查看更多</p> </p>
+                <p class="moment23">蓝桥杯报销活动已开启</p>
+                <p class="moment24">dalasiweijie</p>
+                <p class="moment25">今天17:56  软件工程2107班</p>
+                <img src="../储存图片/abe1eea3ca79fc28-c577ebdcb0f3dbcc-9016680db63a5b3f.png" class="img34">
+            </div>
+            <div class="Rectangle1"></div>
+            <div class="frame22">
+                <p class="p5">全部</p>
+                <p class="p6">报销</p>
+                <p class="p7">竞赛</p>
+                <p class="p8">项目</p>
+                <p class="p9">兴趣活动</p>
+            </div>
+            <p class="zuixin">最新消息</p>
+            <hr class="line2">
+            <div class="frame35">...</div>
+            <div class="group3">
+                <div class="frame33"><</div>
+                <div class="frame34">></div>
+                <div class="frame15">1</div>
+                <div class="frame16">2</div>
+                <div class="frame17">3</div>
+                <div class="frame18">4</div>
+                <div class="frame19">5</div>
+                <div class="frame20">6</div>
+                <div class="frame26">12</div>
+            </div>
+
+            
+
+            
+        </div>
+        
+    </div>
+</html>
